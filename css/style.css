@@ -9,6 +9,7 @@
   --color-forest: #435a3c;
   --color-forest-dark: #2f402a;
   --color-terracotta: #c1613a;
+  --color-terracotta-btn: #b55a35; /* variante piu' scura di --color-terracotta: garantisce contrasto AA (4.5:1+) col testo bianco dei bottoni */
   --color-terracotta-dark: #9c4c2c;
   --color-mustard: #e3a23b;
   --color-cherry: #b3453f;
@@ -73,6 +74,24 @@ p { margin: 0 0 1em; }
   padding: 0 24px;
 }
 
+/* ---------- Skip link (accessibilita' da tastiera) ---------- */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 12px;
+  z-index: 999;
+  background: var(--color-forest-dark);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
 .eyebrow {
   display: inline-block;
   font-family: var(--font-body);
@@ -134,7 +153,7 @@ p { margin: 0 0 1em; }
 .btn:hover { transform: translateY(-2px); }
 
 .btn--primary {
-  background: var(--color-terracotta);
+  background: var(--color-terracotta-btn);
   color: var(--color-cream-2);
   box-shadow: var(--shadow-soft);
 }
@@ -333,6 +352,11 @@ p { margin: 0 0 1em; }
 }
 
 .gallery-grid .media-frame:hover { transform: translateY(-3px); }
+
+.gallery-grid .media-frame:focus-visible {
+  outline: 3px solid var(--color-terracotta-dark);
+  outline-offset: 2px;
+}
 
 .lightbox__panel img {
   width: 100%;
@@ -707,7 +731,7 @@ p { margin: 0 0 1em; }
 }
 
 .tag--vegan { background: #eaf3e1; color: #3c6b2c; }
-.tag--bio { background: #f3ecd8; color: #8a6a1f; }
+.tag--bio { background: #f3ecd8; color: #674f17; }
 .tag--gf { background: #f3e3e0; color: var(--color-terracotta-dark); }
 
 .callout {

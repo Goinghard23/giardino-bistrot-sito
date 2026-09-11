@@ -31,21 +31,36 @@ function initGalleryLightbox() {
   var imageEl = lightbox.querySelector("[data-lightbox-image]");
   var closeEl = lightbox.querySelector("[data-lightbox-close]");
 
+  function open(item) {
+    var label = item.getAttribute("data-label");
+    var img = item.getAttribute("data-img");
+    labelEl.textContent = label;
+    if (imageEl && img) {
+      imageEl.src = img;
+      imageEl.alt = label;
+    }
+    lightbox.classList.add("is-open");
+    lastFocused = item;
+  }
+
+  var lastFocused = null;
+
   items.forEach(function (item) {
     item.addEventListener("click", function () {
-      var label = item.getAttribute("data-label");
-      var img = item.getAttribute("data-img");
-      labelEl.textContent = label;
-      if (imageEl && img) {
-        imageEl.src = img;
-        imageEl.alt = label;
+      open(item);
+    });
+    // I riquadri galleria usano role="button": servono i tasti Invio/Spazio per l'accessibilità da tastiera.
+    item.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        open(item);
       }
-      lightbox.classList.add("is-open");
     });
   });
 
   function close() {
     lightbox.classList.remove("is-open");
+    if (lastFocused) lastFocused.focus();
   }
 
   closeEl.addEventListener("click", close);
@@ -53,7 +68,7 @@ function initGalleryLightbox() {
     if (event.target === lightbox) close();
   });
   document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") close();
+    if (event.key === "Escape" && lightbox.classList.contains("is-open")) close();
   });
 }
 
