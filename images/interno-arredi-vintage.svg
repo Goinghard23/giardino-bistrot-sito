@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f6ead6"/>
+  <rect x="0" y="0" width="400" height="160" fill="#e8ddc4"/>
+  <rect x="40" y="30" width="90" height="70" rx="4" fill="#fffdf8" stroke="#c1613a" stroke-width="4"/>
+  <circle cx="85" cy="65" r="20" fill="#e3a23b" opacity="0.7"/>
+  <rect x="180" y="40" width="70" height="55" rx="4" fill="#fffdf8" stroke="#435a3c" stroke-width="4"/>
+  <path d="M190 90 L220 50 L250 90 Z" fill="#435a3c" opacity="0.6"/>
+  <rect x="300" y="20" width="60" height="80" rx="4" fill="#fffdf8" stroke="#b3453f" stroke-width="4"/>
+  <circle cx="330" cy="60" r="16" fill="#b3453f" opacity="0.6"/>
+  <ellipse cx="200" cy="270" rx="180" ry="20" fill="#2e2a24" opacity="0.08"/>
+  <rect x="50" y="200" width="70" height="60" rx="8" fill="#8a5aa0"/>
+  <rect x="150" y="210" width="90" height="50" rx="8" fill="#e3a23b"/>
+  <rect x="270" y="195" width="70" height="65" rx="8" fill="#435a3c"/>
+  <path d="M30 260 Q40 210 60 260" fill="#5c7a4f"/>
+  <path d="M10 260 Q20 220 40 260" fill="#6f8f61"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="checker2" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="#fffdf8"/>
+      <rect width="15" height="15" fill="#b3453f"/>
+      <rect x="15" y="15" width="15" height="15" fill="#b3453f"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#checker2)"/>
+  <ellipse cx="200" cy="220" rx="150" ry="18" fill="#2e2a24" opacity="0.12"/>
+  <path d="M110 150 Q110 120 150 118 L250 118 Q290 120 290 150 L280 175 L120 175 Z" fill="#e8c78a"/>
+  <path d="M120 175 L280 175 L275 190 L125 190 Z" fill="#6f8f4f"/>
+  <path d="M125 190 L275 190 L270 205 L130 205 Z" fill="#c1613a"/>
+  <path d="M130 205 L270 205 L262 225 Q200 240 138 225 Z" fill="#e8c78a"/>
+  <g stroke="#c98a3f" stroke-width="3" fill="none">
+    <path d="M130 130 L140 145"/>
+    <path d="M160 125 L168 142"/>
+    <path d="M195 122 L200 140"/>
+    <path d="M230 125 L235 142"/>
+    <path d="M260 132 L268 146"/>
+  </g>
+</svg>

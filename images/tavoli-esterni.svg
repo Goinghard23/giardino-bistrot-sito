@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#eef1e6"/>
+  <rect x="0" y="0" width="400" height="120" fill="#e4d9c4"/>
+  <rect x="20" y="0" width="60" height="120" fill="#faf3e6"/>
+  <rect x="120" y="0" width="60" height="120" fill="#faf3e6"/>
+  <rect x="220" y="0" width="60" height="120" fill="#faf3e6"/>
+  <rect x="320" y="0" width="60" height="120" fill="#faf3e6"/>
+  <path d="M0 120 Q50 90 100 120 T200 120 T300 120 T400 120 L400 130 L0 130 Z" fill="#e4d9c4"/>
+  <rect x="0" y="120" width="400" height="180" fill="#f6ead6"/>
+  <ellipse cx="150" cy="230" rx="45" ry="14" fill="#2e2a24" opacity="0.08"/>
+  <rect x="140" y="180" width="20" height="55" fill="#9c4c2c"/>
+  <ellipse cx="150" cy="180" rx="46" ry="12" fill="#435a3c"/>
+  <rect x="110" y="220" width="14" height="30" rx="3" fill="#e3a23b"/>
+  <rect x="170" y="220" width="14" height="30" rx="3" fill="#b3453f"/>
+  <ellipse cx="280" cy="255" rx="18" ry="26" fill="#435a3c" opacity="0.8"/>
+  <rect x="270" y="270" width="20" height="10" fill="#9c4c2c"/>
+</svg>
